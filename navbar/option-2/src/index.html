@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kinglan Technolgies</title>
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Monoton&family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind custom css -->
+    <link rel="stylesheet" href="../dist/output.css">
+</head>
+
+<body>
+    <header>
+        <nav class="fixed top-0 left-[50%] -translate-x-[50%] w-full py-[20px] px-[30px] bg-[hsla(0, 0%, 100%, 0.99] border-b-[1px] border-solid border-[hsla(0, 0%, 0%, 0.05)] shadow-sm z-50 lg:py-[35px] px-[30px]">
+            <div class="flex justify-between items-center tablet">
+                <a href="#" class="font-semibold text-fs-1">Kinglan Tech.</a>
+
+                <ul class="bg-[hsla(0, 0%, 100%, 0.9)] absolute top-[91px] left-0 w-full h-[calc(100vh-91px)] flex flex-col items-center gap-[30px] p-[35px] backdrop-blur translate-y-[50px] opacity-0 invisible pointer-events-none transition duration-300 ease-in-out navbar-nav laptop">
+                    <li><a href="#home" class="nav-link">Home</a></a></li>
+                    <li><a href="#services" class="nav-link">Services</a></a></li>
+                    <li><a href="#hire-us" class="nav-link">Hireus</a></a></li>
+                    <li><a href="#contact-us" class="nav-link">Contact us</a></a></li>
+                </ul>
+
+                <button class="menu-toggle-btn w-[20px] gap-[5px] transition transform duration-[500ms] active:rotate-[720deg] lg:hidden">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <button class="close-toggle-btn w-[20px] gap-[5px] transition transform duration-[500ms] active:rotate-[720deg] lg:hidden hidden">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- custom js -->
+    <script src="script.js"></script>
+
+    <!-- Font awesome link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+</body>
+
+</html>

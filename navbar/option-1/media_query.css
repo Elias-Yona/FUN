@@ -27,19 +27,6 @@
 
 @media (min-width: 1024px) {
   /**
-     * CUSTOM PROPERTY 
-     */
-
-  :root {
-    /**
-       * spacing 
-       */
-
-    --py: 100px;
-    --mw: 950px;
-  }
-
-  /**
      * HEADER 
      */
 
