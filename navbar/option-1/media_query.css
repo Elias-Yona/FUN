@@ -1,0 +1,66 @@
+/* For tablet */
+
+@media (min-width: 570px) {
+  /**
+     * CUSTOM PROPERTY 
+     */
+
+  :root {
+    /**
+       * spacing 
+       */
+
+    --mw: 550px;
+  }
+
+  /**
+     * HEADER
+     */
+
+  .navbar-wrapper {
+    max-width: var(--mw);
+    margin-inline: auto;
+  }
+}
+
+/* for desktop */
+
+@media (min-width: 1024px) {
+  /**
+     * CUSTOM PROPERTY 
+     */
+
+  :root {
+    /**
+       * spacing 
+       */
+
+    --py: 100px;
+    --mw: 950px;
+  }
+
+  /**
+     * HEADER 
+     */
+
+  .navbar {
+    padding: 35px 30px;
+  }
+
+  .navbar-nav {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    width: auto;
+    height: auto;
+    transform: translateY(0);
+    padding: 0;
+    flex-direction: row;
+    gap: 50px;
+    pointer-events: all;
+  }
+
+  .menu-toggle-btn {
+    display: none;
+  }
+}

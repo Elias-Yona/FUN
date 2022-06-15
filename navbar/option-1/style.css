@@ -1,0 +1,173 @@
+/* CUSTOM PROPERTY */
+:root {
+  /**
+    * colors
+    */
+  --space-cadet: hsl(249, 37%, 19%);
+  --saffron: hsl(45, 91%, 58%);
+
+  /**
+   * typography 
+   */
+
+  --fs-1: 46px;
+  --fs-2: 28px;
+  --fs-3: 18px;
+  --fs-4: 15px;
+  --fs-5: 14px;
+
+  /**
+   * others 
+   */
+
+  --default-transition: 0.75s ease;
+}
+
+/* RESET */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline-offset: 5px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  font: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+html {
+  font-family: "Rubik", sans-serif;
+  color: var(--space-cadet);
+}
+
+/* REUSED */
+.btn {
+  height: 55px;
+  padding: 0 25px;
+  color: var(--space-cadet);
+  font-size: 14px;
+  font-weight: 500;
+  transition: var(--default-transition);
+}
+
+.btn:hover {
+  filter: saturate(1.05) brightness(1.05);
+}
+
+.btn-primary {
+  background: var(--saffron);
+}
+
+.btn-secondary {
+  background: var(--cultured);
+}
+
+.btn-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* HEADER */
+.logo {
+  font-weight: 600;
+  font-size: var(--fs-3);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  padding: 20px 30px;
+  background: hsla(0, 0%, 100%, 0.99);
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.05);
+  box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.05);
+  z-index: 5;
+}
+
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-nav {
+  background: hsla(0, 0%, 100%, 0.9);
+  position: absolute;
+  top: 91px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 91px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 35px;
+  backdrop-filter: blur(10px);
+  transform: translateY(50px);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar-nav.active {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+.nav-link {
+  color: var(--space-cadet);
+  font-size: var(--fs-5);
+  transition: 0.25s;
+}
+
+.nav-link:hover {
+  color: var(--saffron);
+}
+
+.menu-toggle-btn {
+  display: flex;
+  flex-direction: column;
+  width: 20px;
+  gap: 5px;
+}
+
+.menu-toggle-btn .line {
+  background: var(--space-cadet);
+  width: 20px;
+  height: 2px;
+  border-radius: 2px;
+  transition: 0.25s ease;
+}
+
+.menu-toggle-btn.active .one {
+  transform: translateY(7px) rotate(-45deg);
+}
+
+.menu-toggle-btn.active .two {
+  transform: rotate(45deg);
+}
+
+.menu-toggle-btn.active .three {
+  transform: translateY(-7px) rotate(-45deg);
+}
