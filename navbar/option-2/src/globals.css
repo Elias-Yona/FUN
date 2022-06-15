@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Rubik", sans-serif;
+    @apply text-space-cadet;
+  }
+}
+
+.default-transition {
+  @apply duration-700 ease-in;
+}
+
+.navbar-nav-active {
+  @apply translate-y-0 opacity-100 visible pointer-events-auto;
+}
+
+.nav-link {
+  @apply text-space-cadet text-fs-2 transition duration-[250ms];
+}
+
+.nav-link:hover {
+  @apply text-saffron;
+}
+
+.menu-toggle-btn-active {
+  @apply hidden;
+}
+
+.close-toggle-btn-active {
+  @apply inline;
+}
+
+.laptop {
+  @apply lg:static lg:opacity-100 lg:visible lg:w-auto lg:h-auto lg:translate-y-0 lg:p-0 lg:flex-row lg:gap-[50px] lg:pointer-events-auto;
+}
+
+.tablet {
+  @apply sm:max-w-[1000px] sm:m-auto;
+}

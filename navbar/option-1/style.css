@@ -55,34 +55,6 @@ html {
   color: var(--space-cadet);
 }
 
-/* REUSED */
-.btn {
-  height: 55px;
-  padding: 0 25px;
-  color: var(--space-cadet);
-  font-size: 14px;
-  font-weight: 500;
-  transition: var(--default-transition);
-}
-
-.btn:hover {
-  filter: saturate(1.05) brightness(1.05);
-}
-
-.btn-primary {
-  background: var(--saffron);
-}
-
-.btn-secondary {
-  background: var(--cultured);
-}
-
-.btn-icon {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
 /* HEADER */
 .logo {
   font-weight: 600;
