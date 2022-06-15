@@ -11,5 +11,5 @@ npm install
 
 ## Start the Tailwind CLI build process
 ```bash
-tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+tailwindcss -i ./src/globals.css -o ./dist/output.css --watch
 ```
